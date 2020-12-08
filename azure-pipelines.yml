@@ -11,6 +11,19 @@ variables:
   configuration: 'Release'
 
 steps:
+
+- script: ls -la
+  displayName: 'Testing ls command'
+
+- script: pwd
+  displayName: 'Testing Pwd command'
+
+- task: CocoaPods@0
+  inputs:
+    forceRepoUpdate: false
+    projectDirectory: '$(system.defaultWorkingDirectory)'
+  displayName: 'pod install using the CocoaPods task with a forced repo update and a custom project directory'
+    
 - task: Xcode@5
   inputs:
     sdk: '$(sdk)'
@@ -19,3 +32,4 @@ steps:
     xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
+    
