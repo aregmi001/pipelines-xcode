@@ -32,4 +32,11 @@ steps:
     xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
-    
+
+# - task: AppCenterDistribute@3
+#   inputs:
+#     appFile: 
+#     releaseNotesOption: 'input'
+#     destinationType: 'groups'
+#     appSlug: ''
+#     serverEndpoint: ''
