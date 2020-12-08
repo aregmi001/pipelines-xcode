@@ -29,9 +29,10 @@ steps:
     sdk: '$(sdk)'
     scheme: '$(scheme)'
     configuration: '$(configuration)'
-    xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
-    exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
-    packageApp: false
+    actions: 'build'
+    xcWorkspacePath: '**/*.xcworkspace'
+    xcodeVersion: '11'
+    packageApp: true
 
 # - task: AppCenterDistribute@3
 #   inputs:
