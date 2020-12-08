@@ -1,3 +1,10 @@
+
+trigger:
+- main
+
+pool:
+  vmImage: 'macos-latest'
+  
 variables:
   scheme: ''
   sdk: 'iphoneos'
