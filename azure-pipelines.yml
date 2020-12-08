@@ -11,6 +11,11 @@ variables:
   configuration: 'Release'
 
 steps:
+
+- task: CocoaPods@0
+  inputs:
+    forceRepoUpdate: false
+    
 - task: Xcode@5
   inputs:
     sdk: '$(sdk)'
@@ -19,3 +24,4 @@ steps:
     xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
+    
