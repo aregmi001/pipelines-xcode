@@ -18,6 +18,15 @@ steps:
 - script: pwd
   displayName: 'Testing Pwd command'
 
+- task: InstallAppleCertificate@2
+  inputs:
+    certSecureFile: 'ol_distrib.p12'
+    certPwd: $(Openlane2020)
+
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+    provProfileSecureFile: 'Openlane_Test1_Inhouse.mobileprovision'
+
 - task: CocoaPods@0
   inputs:
     forceRepoUpdate: false
@@ -25,7 +34,7 @@ steps:
   displayName: 'pod install using the CocoaPods task with a forced repo update and a custom project directory'
     
 
-- script: release_build.sh export_options_enterprise.plist iOSHelloWorld.xcworkspace Release 'iOSHelloWorld' 'iPhone Distribution`:` OPENLANE, Inc' 2.2 1
+- script: sh release_build.sh export_options_enterprise.plist iOSHelloWorld.xcworkspace Release 'iOSHelloWorld' 'iPhone Distribution`:` OPENLANE, Inc' 2.2 1
   displayName: 'Run Enterprise Buld via Script'
 
 # - task: Xcode@5
