@@ -54,3 +54,11 @@ steps:
 #     destinationType: 'groups'
 #     appSlug: ''
 #     serverEndpoint: ''
+
+# - task: AppCenterDistribute@3
+#   inputs:
+#     appSlug: 'aregmi-vqyu/Openlane-Test1'
+#     appFile: './output_1/*.ipa'
+#     releaseNotesOption: 'input'
+#     releaseNotesInput: 'Test Build'
+#     destinationType: 'groups'
