@@ -34,7 +34,7 @@ steps:
   displayName: 'pod install using the CocoaPods task with a forced repo update and a custom project directory'
     
 
-- script: sh release_build.sh export_options_enterprise.plist iOSHelloWorld.xcworkspace Release 'iOSHelloWorld' "iPhone Distribution`:` OPENLANE, Inc" 2.2 1
+- script: sh release_build.sh export_options_enterprise.plist iOSHelloWorld.xcworkspace Release 'iOSHelloWorld' "iPhone Distribution" 2.2 1
   displayName: 'Run Enterprise Buld via Script'
 
 # - task: Xcode@5
