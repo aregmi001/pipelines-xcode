@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7030EB82581524C00B810CF /* Pods_iOSHelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7030EB72581524C00B810CF /* Pods_iOSHelloWorld.framework */; };
 		D24408D91F6873A700D58AC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24408D81F6873A700D58AC7 /* AppDelegate.swift */; };
 		D24408DB1F6873A700D58AC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24408DA1F6873A700D58AC7 /* ViewController.swift */; };
 		D24408DE1F6873A700D58AC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24408DC1F6873A700D58AC7 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		291EBBE4522A678F7A32D9E4 /* Pods-iOSHelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSHelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-iOSHelloWorld/Pods-iOSHelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		62E5BC8C8A054D2DDCB1953E /* Pods-iOSHelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSHelloWorld.release.xcconfig"; path = "Target Support Files/Pods-iOSHelloWorld/Pods-iOSHelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		C7030EB72581524C00B810CF /* Pods_iOSHelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iOSHelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24408D51F6873A700D58AC7 /* iOSHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24408D81F6873A700D58AC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D24408DA1F6873A700D58AC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7030EB82581524C00B810CF /* Pods_iOSHelloWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		2CE05922B81141564437E1A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7030EB72581524C00B810CF /* Pods_iOSHelloWorld.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
