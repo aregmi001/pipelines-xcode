@@ -24,15 +24,19 @@ steps:
     projectDirectory: '$(system.defaultWorkingDirectory)'
   displayName: 'pod install using the CocoaPods task with a forced repo update and a custom project directory'
     
-- task: Xcode@5
-  inputs:
-    sdk: '$(sdk)'
-    scheme: '$(scheme)'
-    configuration: '$(configuration)'
-    actions: 'build'
-    xcWorkspacePath: '**/*.xcworkspace'
-    xcodeVersion: '11'
-    packageApp: true
+
+- script: release_build.sh export_options_enterprise.plist iOSHelloWorld.xcworkspace Release 'iOSHelloWorld' 'iPhone Distribution`:` OPENLANE, Inc' 2.2 1
+  displayName: 'Run Enterprise Buld via Script'
+
+# - task: Xcode@5
+#   inputs:
+#     sdk: '$(sdk)'
+#     scheme: '$(scheme)'
+#     configuration: '$(configuration)'
+#     actions: 'build'
+#     xcWorkspacePath: '**/*.xcworkspace'
+#     xcodeVersion: '11'
+#     packageApp: true
 
 # - task: AppCenterDistribute@3
 #   inputs:
