@@ -62,3 +62,12 @@ steps:
 #     releaseNotesOption: 'input'
 #     releaseNotesInput: 'Test Build'
 #     destinationType: 'groups'
+
+- task: AppCenterDistribute@3
+  inputs:
+    serverEndpoint: 'AppCenter_ARegmi'
+    appSlug: 'aregmi-vqyu/Openlane-Test1'
+    appFile: '/output1/ipapath'
+    releaseNotesOption: 'input'
+    releaseNotesInput: 'testing App Center Upload'
+    destinationType: 'groups'
