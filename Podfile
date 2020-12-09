@@ -6,7 +6,7 @@ platform :ios, "12.0"
 
 def default_pods
     
-    pod 'Branch', '= 0.33.1'
+    #pod 'IAPHelper'
  
 end
 

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Branch
+//import IAPHelper
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        if(![IAPShare sharedHelper].iap) {
+//
+//            NSSet* dataSet = [[NSSet alloc] initWithObjects:@"com.comquas.iap.test", nil];
+//
+//            [IAPShare sharedHelper].iap = [[IAPHelper alloc] initWithProductIdentifiers:dataSet];
+//
+//        }
+        
         return true
     }
 
