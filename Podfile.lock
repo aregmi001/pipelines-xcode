@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: ef0b3f9113854745ee7aa91b934126398406abea
+PODS:
+  - IAPHelper (1.1)
+
+DEPENDENCIES:
+  - IAPHelper
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - IAPHelper
+
+SPEC CHECKSUMS:
+  IAPHelper: fd74f53b0ac142eed085777b88b86a11746a2dd4
+
+PODFILE CHECKSUM: 109681d50fa46d765809da92bba4cea4f122d6e2
 
 COCOAPODS: 1.10.0
