@@ -21,7 +21,7 @@ steps:
 - task: InstallAppleCertificate@2
   inputs:
     certSecureFile: 'ol_distrib.p12'
-    certPwd: $(Openlane2020)
+    certPwd: Openlane2020
 
 - task: InstallAppleProvisioningProfile@1
   inputs:
