@@ -67,7 +67,7 @@ steps:
   inputs:
     serverEndpoint: 'AppCenter_ARegmi'
     appSlug: 'aregmi-vqyu/Openlane-Test1'
-    appFile: '/output1/ipapath'
+    appFile: './output_1/iOS-iOSHelloWorld-Release-2.2-1.ipa'
     releaseNotesOption: 'input'
     releaseNotesInput: 'testing App Center Upload'
     destinationType: 'groups'
