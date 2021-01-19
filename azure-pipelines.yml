@@ -12,6 +12,11 @@ variables:
 
 steps:
 
+- task: Shell++@0
+  inputs:
+    type: 'InlineScript'
+    script: 'echo Hello $(buildNumber)'    
+
 - script: ls -la
   displayName: 'Testing ls command'
 
