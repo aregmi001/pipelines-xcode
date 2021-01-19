@@ -21,6 +21,14 @@ steps:
       a=($(echo "$(Build.BuildNumber)" | tr '.' '\n'))
       echo "Hello Build Number = ${a[1]}"
 
+      version="2.0.2"
+      splitVersion=($(echo "$(version)" | tr '.' '\n'))
+
+      for i in "${!splitVersion[@]}"
+      do
+          echo "$i=>${splitVersion[i]}"
+      done
+
       echo "==============="
       echo "ACR_REG"
       echo "$ACR_REG"
