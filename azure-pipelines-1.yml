@@ -16,7 +16,7 @@ steps:
   inputs:
     type: 'InlineScript'
     script: |
-      export ACR_REG="Hello world.$(Rev:r)"
+      export ACR_REG="Hello world.$(Build.BuildNumber)"
       echo "==============="
       echo "ACR_REG"
       echo "$ACR_REG"
