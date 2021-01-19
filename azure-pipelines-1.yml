@@ -26,7 +26,7 @@ steps:
       pipelineBuildNumber=($(echo "$(Build.BuildNumber)" | tr '.' '\n'))
       echo "Pipeline Build Number = ${pipelineBuildNumber[1]}"
 
-      appcenterBuildNumber=$(echo "${pipelineBuildNumber} + build" | bc)
+      appcenterBuildNumber=$(echo "${pipelineBuildNumber} + ${build}" | bc)
       echo "Appcenter Build Number = ${pipelineBuildNumber[1]}"
 
 
