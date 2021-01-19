@@ -27,7 +27,7 @@ steps:
       echo "Pipeline Build Number = ${pipelineBuildNumber[1]}"
 
       appcenterBuildNumber=$(echo "${pipelineBuildNumber} + ${build}" | bc)
-      echo "Appcenter Build Number = ${pipelineBuildNumber[1]}"
+      echo "Appcenter Build Number = ${appcenterBuildNumber}"
 
 
       version="2.0.2"
