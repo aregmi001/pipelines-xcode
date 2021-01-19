@@ -18,9 +18,8 @@ steps:
     script: |
       export ACR_REG="Hello world.$(Build.BuildNumber)"
 
-      t="one,two,three"
-      a=($(echo "$t" | tr ',' '\n'))
-      echo "${a[2]}"
+      a=($(echo "$(Build.BuildNumber)" | tr '.' '\n'))
+      echo "Hello Build Number = ${a[1]}"
 
       echo "==============="
       echo "ACR_REG"
