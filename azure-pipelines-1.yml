@@ -14,7 +14,7 @@ steps:
 - task: Shell++@0
   inputs:
     type: 'InlineScript'
-    script: 'echo Hey $(buildNumber)'
+    script: 'echo Hey ''$(buildNumber)'''
 - task: Xcode@5
   inputs:
     actions: 'build'
