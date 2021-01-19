@@ -22,6 +22,33 @@ steps:
       $days = $interval.Days
       
       Write-Host "##vso[task.setvariable variable=buildNumber]10.0.$days.1024"
+
+- task: Shell++@0
+  inputs:
+    type: 'InlineScript'
+    script: |
+      export ACR_REG="Hello world"
+      echo "==============="
+      echo "ACR_REG"
+      echo "$ACR_REG"
+      echo "==============="
+            
+      echo "##vso[task.setvariable variable=ACR_REGISTRY_LOGIN]$ACR_REG"
+
+      echo "==============="
+      echo "ACR reg login"
+      echo $ACR_REGISTRY_LOGIN
+      echo "==============="
+
+- task: Shell++@0
+  inputs:
+    type: 'InlineScript'
+    script: |
+      echo "==============="
+      echo "ACR reg login"
+      echo $ACR_REGISTRY_LOGIN
+      echo "$ACR_REGISTRY_LOGIN"
+      echo "==============="
 - task: Shell++@0
   inputs:
     type: 'InlineScript'
