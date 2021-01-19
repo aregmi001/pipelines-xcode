@@ -17,6 +17,11 @@ steps:
     type: 'InlineScript'
     script: |
       export ACR_REG="Hello world.$(Build.BuildNumber)"
+
+      t="one,two,three"
+      a=($(echo "$t" | tr ',' '\n'))
+      echo "${a[2]}"
+
       echo "==============="
       echo "ACR_REG"
       echo "$ACR_REG"
